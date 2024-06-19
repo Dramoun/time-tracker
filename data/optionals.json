@@ -1,0 +1,121 @@
+{
+  "positives": [
+    {
+      "id": "P1",
+      "name": "Drink water and a healthy shake",
+      "value": 3
+    },
+    {
+      "id": "P2",
+      "name": "Learn a language for at least 15 minutes",
+      "value": 6
+    },
+    {
+      "id": "P3",
+      "name": "Play chess for 30 minutes",
+      "value": 4
+    },
+    {
+      "id": "P4",
+      "name": "Meditate for 15 minutes",
+      "value": 5
+    },
+    {
+      "id": "P5",
+      "name": "Plan daily tasks",
+      "value": 8
+    },
+    {
+      "id": "P6",
+      "name": "Read for leisure or personal development (20 minutes)",
+      "value": 3
+    },
+    {
+      "id": "P7",
+      "name": "Spend quality time with family or friends (30 minutes)",
+      "value": 4
+    },
+    {
+      "id": "P8",
+      "name": "Complete a creative activity (drawing, writing, printing, etc.) for 15 minutes",
+      "value": 5
+    },
+    {
+      "id": "P9",
+      "name": "Take care of plants",
+      "value": 5
+    },
+    {
+      "id": "P10",
+      "name": "Manual tasks (e.g., fixing something, crafting)",
+      "value": 4
+    },
+    {
+      "id": "P11",
+      "name": "Clean living room",
+      "value": 4
+    },
+    {
+      "id": "P12",
+      "name": "Clean bathroom",
+      "value": 4
+    },
+    {
+      "id": "P13",
+      "name": "Clean kitchen",
+      "value": 2
+    },
+    {
+      "id": "P14",
+      "name": "Clean balcony",
+      "value": 1
+    },
+    {
+      "id": "P15",
+      "name": "Wash and hang clothes",
+      "value": 2
+    }
+  ],
+  "negatives": [
+    {
+      "id": "N1",
+      "name": "Order food online",
+      "value": -6
+    },
+    {
+      "id": "N2",
+      "name": "Drink unhealthy beverages",
+      "value": -4
+    },
+    {
+      "id": "N3",
+      "name": "Smoke",
+      "value": -4
+    },
+    {
+      "id": "N4",
+      "name": "Go to sleep late",
+      "value": -2
+    },
+    {
+      "id": "N5",
+      "name": "Not adhere to routine",
+      "value": -4
+    },
+    {
+      "id": "N6",
+      "name": "Excessive screen time not related to productivity or learning (more than 2 hours)",
+      "value": -5
+    },
+    {
+      "id": "N7",
+      "name": "Procrastinate on important tasks (delaying more than 1 day)",
+      "value": -6
+    },
+    {
+      "id": "N8",
+      "name": "Spending unnecessary money on items/collectibles",
+      "value": -3
+    }
+  ]
+}

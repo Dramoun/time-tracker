@@ -1,69 +1,85 @@
 {
+  "score": 0,
+  "positives": [],
+  "negatives": [],
   "tasks": [
     {
       "name": "Wake up & small stretch",
       "value": 1,
-      "start_time": "08:00"
+      "start_time": "08:00",
+      "status": false
     },
     {
       "name": "Bathroom routine",
       "value": 1,
-      "start_time": "08:15"
+      "start_time": "08:15",
+      "status": false
     },
     {
       "name": "Homemade coffee",
       "value": 1,
-      "start_time": "08:30"
+      "start_time": "08:30",
+      "status": false
     },
     {
       "name": "Small breakfast (reading encouraged)",
       "value": 1,
-      "start_time": "08:45"
+      "start_time": "08:45",
+      "status": false
     },
     {
       "name": "Work (with a 10-minute break every hour)",
       "value": 1,
-      "start_time": "09:15"
+      "start_time": "09:15",
+      "status": false
     },
     {
       "name": "Lunch preparation & eating (reading encouraged)",
       "value": 1,
-      "start_time": "12:00"
+      "start_time": "12:00",
+      "status": false
     },
     {
       "name": "Work (with a 10-minute break every hour)",
       "value": 1,
-      "start_time": "13:00"
+      "start_time": "13:00",
+      "status": false
     },
     {
       "name": "Dinner preparation & eating (reading encouraged)",
       "value": 1,
-      "start_time": "17:00"
+      "start_time": "17:00",
+      "status": false
     },
     {
       "name": "Free time / Spontaneous activities",
       "value": 1,
-      "start_time": "18:00"
+      "start_time": "18:00",
+      "status": false
     },
     {
       "name": "Evening stretch",
       "value": 1,
-      "start_time": "20:00"
+      "start_time": "20:00",
+      "status": false
     },
     {
       "name": "Bathroom routine & prepare for bed",
       "value": 1,
-      "start_time": "20:30"
+      "start_time": "20:30",
+      "status": false
     },
     {
       "name": "In bed, reading or relaxation",
       "value": 1,
-      "start_time": "22:00"
+      "start_time": "22:00",
+      "status": false
     },
     {
       "name": "Lights out",
       "value": 1,
-      "start_time": "23:00"
+      "start_time": "23:00",
+      "status": false
     }
     ]
 }

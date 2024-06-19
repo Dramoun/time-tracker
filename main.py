@@ -5,8 +5,9 @@ from kivy.uix.label import Label
 from kivy.uix.screenmanager import ScreenManager
 from kivy.uix.widget import Widget
 
-from calendar_screen import CalendarScreen
+from calendar_screen import CalendarScreen, TaskScheduleManager
 from tasks_screen import TasksScreen
+
 
 
 # Create the main application layout
@@ -15,9 +16,16 @@ class MainAppLayout(BoxLayout):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
         self.orientation = 'vertical'
+
+        self.calendar_screen = CalendarScreen(name='Calendar')
+        self.tasks_screen = TasksScreen(name='Tasks')
+
         self.create_top_bar()
         self.create_screen_manager()
         self.create_bottom_nav_bar()
+
+    def closing(self):
+        self.calendar_screen.closing()
 
     def create_top_bar(self):
         self.top_bar = BoxLayout(size_hint_y=None, height=60, orientation='horizontal', padding=10)
@@ -63,8 +71,8 @@ class MainAppLayout(BoxLayout):
         self.screen_manager = ScreenManager()
 
         # Add screens to the Screen Manager
-        self.screen_manager.add_widget(CalendarScreen(name='Calendar'))
-        self.screen_manager.add_widget(TasksScreen(name='Tasks'))
+        self.screen_manager.add_widget(self.calendar_screen)
+        self.screen_manager.add_widget(self.tasks_screen)
 
         self.add_widget(self.screen_manager)
 
@@ -76,9 +84,19 @@ class MainAppLayout(BoxLayout):
 
 # Build the app
 class MyApp(App):
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+        self.main_app = MainAppLayout()
+
     def build(self):
-        return MainAppLayout()
+        return self.main_app
+
+    def on_stop(self):
+        self.main_app.closing()
 
 
 if __name__ == '__main__':
     MyApp().run()
+
+
+
